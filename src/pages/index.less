@@ -1,0 +1,225 @@
+.baseInfo{
+	padding-bottom: 50px;
+	.imgBox{
+		height: 240px;
+		background-size: 100%;
+		.position {
+			height: 36px;
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+			padding: 10px;
+		}
+
+		.warn {
+			z-index: 1;
+			height: 20px;
+			margin-bottom: 125px;
+			padding: 0 20px;
+			.warnInfo{
+				display: inline-block;
+				height: 15px;
+				line-height: 15px;
+				font-size: 11px;
+				text-align: center;
+				padding: 0px 5px;
+				border-radius: 20px;
+			}
+		}
+
+		.tempInfo{
+			margin-top: 25%;
+			height: 50px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			color: azure;
+			span{
+				font-weight: 600;
+				font-size: 40px;
+				margin-top: -110%;
+			}
+			.temp{
+				font-size: 120px;
+			}
+			div{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				font-size: 16px;
+			}
+		}
+		.dateInfo{
+			margin-top: 20px;
+			font-weight: 500;
+			padding-left: 25px;
+			font-weight: 600;
+		}
+
+	}
+	.hours{
+		margin-top: 10px;
+		width: 100%;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #ddd;
+		.p{
+			padding: 0 15px;
+		}
+		.title_weather{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			div:nth-child(2){
+				width: 2px;
+				background-color: #666;
+				margin: 0 10px;
+				height: 22px;
+			}
+		}
+
+		.itemBox{
+			width: 100%;
+			overflow-x: auto;
+  			overflow-y: hidden;
+			margin: 5px 0;
+			height: 80px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			box-sizing: border-box;
+			.item{
+				height: 60px;
+				width: 50px;
+				margin-right: 2px;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				span {
+					text-align: center;
+					height: 60px;
+					width: 50px;
+					display: inline-block;
+				}
+				img{
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+	.days{
+		width: 90%;
+		background-color: #f0f3fc;
+		border-radius: 20px;
+		margin: 0 auto;
+		img{
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			padding-bottom: 2px;
+		}
+		.title{
+			padding-left: 10px;
+			height: 35px;
+			line-height: 35px;
+			background-color: rgba(105, 105, 105, 0.2);
+			font-weight: 600;
+		}
+		ul {
+			.future{
+				justify-content: center;
+				font-weight: 600;
+				margin: 5px 0;
+			}
+			padding: 0 10px;
+			li{
+				padding: 0 10px;
+				height: 40px;
+				line-height: 35px;
+				margin-bottom: 2px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom: 1px solid #ddd;
+				div{
+					flex: 1;
+				}
+				div:nth-child(2){
+					flex: 3;
+					text-align: center;
+				}
+				div:nth-child(3){
+					text-align: right;
+				}
+			}
+		}
+	}
+	// 空气质量
+	.air_quality{
+		width: 90%;
+		background: #f0f3fc;
+		padding: 15px 20px;
+		margin: 0 auto;
+		border-radius: 20px;
+		.title{
+			display: flex;
+			div{
+				width: 18px;
+				margin-right: 5px;
+			}
+		}
+		div:nth-child(2){
+			font-weight: 700;
+			margin-top: 20px;
+			font-size: 24px;
+		};
+		div:nth-child(3){
+			font-size: 12px;
+		}
+	}
+	// 气象信息
+	.Weather_Information{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		span{
+			width: 100%;
+			margin-left: 5%;
+			margin-bottom: 10px
+		}
+		.box{
+			margin-bottom: 10px;
+			width: 48%;
+			padding: 20px;
+			background-color: #e7ebf7;
+			border-radius: 20px;
+			.img{
+				margin-bottom: 15px;
+				width: 32px;
+			}
+			div:nth-child(2){
+				font-size: 14px;
+			}
+			.tem{
+				font-weight: 700;
+				font-size: 30px;
+				display: flex;
+				.hectopascal{
+					margin-top: 18px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	
+}
+.image{
+	width: 100%;
+	height: 100%;
+}
